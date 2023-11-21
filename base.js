@@ -28,29 +28,30 @@ AFRAME.registerComponent("base",{
         })
 
         window.addEventListener("keydown",e=>{
-            if(e.key === "z" ){
+            if(e.key ==="z" ){
                 console.log("left")
                 this.el.setAttribute("rotation",{
                     x:0,
-                    y:this.el.getAttribute("rotation").y+45,
+                    y:this.el.getAttribute("rotation").y-1,
+                    z:0
+                })
+            }
+        })
+        window.addEventListener("keydown",e=>{
+            if(e.key === "x" ){
+                console.log("left")
+                this.el.setAttribute("rotation",{
+                    x:0,
+                    y:this.el.getAttribute("rotation").y+1,
                     z:0
                 })
             }
         })
     },
-    rotation:function(){
-        window.addEventListener("keydown",e=>{
-            if(e.key === "ArrowLeft" ){
-                console.log("left")
-                this.el.setAttribute("rotation",{
-                    x:0,
-                    y:0+1,
-                    z:0
-                })
-            }
-        })
-    }
+    
 
     
 
 });
+
+

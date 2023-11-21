@@ -11,9 +11,9 @@ AFRAME.registerComponent("car",{
             mtl:car_mtl
         })
         this.el.setAttribute("position",{
-            x:-5,
+            x:-3.6,
             y:0,
-            z:0
+            z:-4
         })
         this.el.setAttribute("rotation",{
             x:-90,
