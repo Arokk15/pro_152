@@ -4,8 +4,8 @@ AFRAME.registerComponent("car",{
     init:function(){
         var car_obj="#"+document.querySelector("a-assets").children[0].id
         var car_mtl="#"+document.querySelector("a-assets").children[1].id
-        console.log(car_obj)
-        console.log(car_mtl)
+        //console.log(car_obj)
+        //console.log(car_mtl)
         this.el.setAttribute("obj-model",{
             obj:car_obj,
             mtl:car_mtl

@@ -26,7 +26,7 @@ AFRAME.registerComponent("left", {
         })
 
         document.querySelector("#left").addEventListener("click",(e)=>{
-            console.log(document.querySelector("#bass").getAttribute("rotation"))
+            //console.log(document.querySelector("#bass").getAttribute("rotation"))
             var bass=document.querySelector("#bass")
             
             bass.setAttribute("rotation",{
@@ -64,15 +64,6 @@ AFRAME.registerComponent("right",{
             y: 0.5,
             z: 0
         })
-        this.el.addEventListener("click",(e)=>{
-            console.log(document.querySelector("#bass").getAttribute("rotation"))
-            var bass=document.querySelector("#bass")
-            
-            bass.setAttribute("rotation",{
-                x:0,
-                y:bass.getAttribute("rotation").y+45,
-                z:0
-            })
-        })
+        
     }
 })

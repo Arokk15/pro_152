@@ -29,7 +29,7 @@ AFRAME.registerComponent("base",{
 
         window.addEventListener("keydown",e=>{
             if(e.key ==="z" ){
-                console.log("left")
+                //console.log("left")
                 this.el.setAttribute("rotation",{
                     x:0,
                     y:this.el.getAttribute("rotation").y-1,
@@ -39,7 +39,7 @@ AFRAME.registerComponent("base",{
         })
         window.addEventListener("keydown",e=>{
             if(e.key === "x" ){
-                console.log("left")
+                //console.log("left")
                 this.el.setAttribute("rotation",{
                     x:0,
                     y:this.el.getAttribute("rotation").y+1,
@@ -47,6 +47,17 @@ AFRAME.registerComponent("base",{
                 })
             }
         })
+
+        window.addEventListener("click",(e)=>{
+            // console.log(document.querySelector("#bass").getAttribute("rotation"))
+             var bass=document.querySelector("#bass")
+             
+             bass.setAttribute("rotation",{
+                 x:0,
+                 y:bass.getAttribute("rotation").y+45,
+                 z:0
+             })
+         })
     },
     
 
